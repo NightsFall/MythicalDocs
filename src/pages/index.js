@@ -40,8 +40,8 @@ export default function Home() {
   const { siteConfig } = useDocusaurusContext();
   return (
     <Layout
-      title={`${siteConfig.title}`}
-      description="This is the documentation for all the projects at Ignition-Development.">
+      title={`MythicalNodes`}
+      description="This is the documentation for all the projects at MythicalLTD.">
       <HomepageHeader />
     </Layout>
   );
