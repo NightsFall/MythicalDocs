@@ -62,13 +62,13 @@ server {
 
 server {
     listen 443 ssl http2;
-    server_name <domain>;
+    server_name webpanel.mythicalsystems.tech;
 
-    root /var/www/AtoroWebPanel/public;
+    root /var/www/MythicalWebPanel/public;
     index index.php;
 
-    access_log /var/log/nginx/pterodactyl.app-access.log;
-    error_log  /var/www/AtoroWebPanel/logs/app-error.log error;
+    access_log /var/log/nginx/MythicalWebPanel.app-access.log;
+    error_log  /var/www/MythicalWebPanel/logs/app-error.log error;
 
     # allow larger file uploads and longer script runtimes
     client_max_body_size 100m;
