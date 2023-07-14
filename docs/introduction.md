@@ -9,4 +9,4 @@ Welcome to the MythicalSystems Documentation, this is where you will find docume
 # Current Projects
 1. [MythicalDash](MythicalDash/Introduction)
 2. [MythicalWebPanel](MythicalWebPanel/Introduction)
-3. [MythicalWebPanel-Daemon](MythicalWebPanel/Introduction)
+3. [MythicalWebPanel-Daemon](MythicalWebPanel-Daemon/Introduction)
