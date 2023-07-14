@@ -29,17 +29,17 @@ mysql -u root -p
 ```
 Enter your MySQL root password when prompted. Then, execute the following SQL statements within the MySQL shell:
 ```sql
-CREATE USER 'MythicalTech'@'127.0.0.1' IDENTIFIED BY '<password>';
-CREATE DATABASE Mythicalwebpanel;
-GRANT ALL PRIVILEGES ON Mythicalwebpanel.* TO 'MythicalTech'@'127.0.0.1' WITH GRANT OPTION;
+CREATE USER 'MythicalSystems'@'127.0.0.1' IDENTIFIED BY '<password>';
+CREATE DATABASE mythicalwebpanel;
+GRANT ALL PRIVILEGES ON mythicalwebpanel.* TO 'MythicalSystems'@'127.0.0.1' WITH GRANT OPTION;
 exit;
 ```
-Replace `<password>` with the desired password for the 'MythicalTech' user.
+Replace `<password>` with the desired password for the 'MythicalSystems' user.
 ### Step 3: Clone MythicalWebPanel Repository
 Clone the MythicalWebPanel repository into the appropriate directory. Run the following commands:
 ```bash
 cd /var/www
-git clone https://github.com/MythicalTech/MythicalWebPanel.git
+git clone https://github.com/mythicalltd/MythicalWebPanel.git
 cd MythicalWebPanel
 composer install --no-dev --optimize-autoloader
 chown -R www-data:www-data /var/www/MythicalWebPanel/*
