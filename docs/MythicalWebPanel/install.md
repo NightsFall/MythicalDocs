@@ -2,7 +2,7 @@
 sidebar_position: 2
 ---
 # Installation 
-These instructions will guide you through the installation and setup of the AtoroWebPanel.
+These instructions will guide you through the installation and setup of the MythicalWebPanel.
 
 
 # Linux
@@ -29,26 +29,26 @@ mysql -u root -p
 ```
 Enter your MySQL root password when prompted. Then, execute the following SQL statements within the MySQL shell:
 ```sql
-CREATE USER 'AtoroTech'@'127.0.0.1' IDENTIFIED BY '<password>';
-CREATE DATABASE atorowebpanel;
-GRANT ALL PRIVILEGES ON atorowebpanel.* TO 'AtoroTech'@'127.0.0.1' WITH GRANT OPTION;
+CREATE USER 'MythicalTech'@'127.0.0.1' IDENTIFIED BY '<password>';
+CREATE DATABASE Mythicalwebpanel;
+GRANT ALL PRIVILEGES ON Mythicalwebpanel.* TO 'MythicalTech'@'127.0.0.1' WITH GRANT OPTION;
 exit;
 ```
-Replace `<password>` with the desired password for the 'AtoroTech' user.
-### Step 3: Clone AtoroWebPanel Repository
-Clone the AtoroWebPanel repository into the appropriate directory. Run the following commands:
+Replace `<password>` with the desired password for the 'MythicalTech' user.
+### Step 3: Clone MythicalWebPanel Repository
+Clone the MythicalWebPanel repository into the appropriate directory. Run the following commands:
 ```bash
 cd /var/www
-git clone https://github.com/AtoroTech/AtoroWebPanel.git
-cd AtoroWebPanel
+git clone https://github.com/MythicalTech/MythicalWebPanel.git
+cd MythicalWebPanel
 composer install --no-dev --optimize-autoloader
-chown -R www-data:www-data /var/www/AtoroWebPanel/*
+chown -R www-data:www-data /var/www/MythicalWebPanel/*
 ```
 ### Step 4: Configure Nginx
-Remove the default Nginx configuration file and create a new one for AtoroWebPanel. Run the following commands:
+Remove the default Nginx configuration file and create a new one for MythicalWebPanel. Run the following commands:
 ```bash
 rm /etc/nginx/sites-enabled/default
-nano /etc/nginx/sites-available/AtoroWebPanel.conf
+nano /etc/nginx/sites-available/MythicalWebPanel.conf
 ```
 In the nano editor, paste the following configuration:
 ```
@@ -127,9 +127,9 @@ certbot certonly --nginx -d <domain>
 ```
 Replace `<domain>` with your domain name.
 ### Step 6: Enable Nginx Configuration
-Create a symbolic link to enable the AtoroWebPanel Nginx configuration. Run the following command:
+Create a symbolic link to enable the MythicalWebPanel Nginx configuration. Run the following command:
 ```bash
-sudo ln -s /etc/nginx/sites-available/AtoroWebPanel.conf /etc/nginx/sites-enabled/AtoroWebPanel.conf
+sudo ln -s /etc/nginx/sites-available/MythicalWebPanel.conf /etc/nginx/sites-enabled/MythicalWebPanel.conf
 ```
 ### Step 7: Restart Nginx
 Restart the Nginx service to apply the changes. Run the following command:
