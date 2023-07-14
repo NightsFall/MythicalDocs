@@ -6,14 +6,14 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'MythicalLTD',
+  title: 'MythicalSystems',
   tagline: 'A new and reliable development team that looks towards improving security of new web apps and more.',
   url: 'https://docs.mythicalnodes.xyz',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'https://avatars.githubusercontent.com/u/117385445?s=200&v=4',
-  organizationName: 'MythicalLTD', 
+  organizationName: 'MythicalSystems', 
   projectName: 'documentation',
   i18n: {
     defaultLocale: 'en',
@@ -49,10 +49,10 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: 'MythicalLTD',
+        title: 'MythicalSystems',
         logo: {
           alt: 'MythicalDocs',
-          src: 'https://avatars.githubusercontent.com/u/117385445?s=200&v=4',
+          src: 'https://avatars.githubusercontent.com/u/117385445',
         },
         items: [
           {
@@ -86,7 +86,7 @@ const config = {
             items: [
               {
                 label: 'Discord',
-                href: 'https://discord.gg/WMV7ACMg7p',
+                href: 'https://discord.gg/7BZTmSK2D8',
               },
             ],
           },
@@ -104,7 +104,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} MythicalLTD. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} MythicalSystems. Built with Docusaurus.`,
       },
       prism: {
         theme: lightCodeTheme,
