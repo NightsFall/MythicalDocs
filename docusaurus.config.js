@@ -8,11 +8,11 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: 'MythicalSystems',
   tagline: 'A new and reliable development team that looks towards improving security of new web apps and more.',
-  url: 'https://docs.mythicalnodes.xyz',
+  url: 'https://docs.mythicalsystems.me',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
-  favicon: 'https://avatars.githubusercontent.com/u/117385445?s=200&v=4',
+  favicon: 'https://avatars.githubusercontent.com/u/117385445',
   organizationName: 'MythicalSystems', 
   projectName: 'documentation',
   i18n: {
