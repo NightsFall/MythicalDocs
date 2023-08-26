@@ -29,5 +29,5 @@ sudo chmod u+x install.sh
 sudo bash install.sh
 ```
 
-### Step 3: Acces the webpanel
+### Step 3: Access the WebPanel
 After you are done using our installer, you can view your panel at `https://webpanel.yourdomain.com/`
