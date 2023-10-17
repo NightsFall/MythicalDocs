@@ -103,11 +103,12 @@ MythicalDash's core environment is easily configured using a few different CLI c
 # Run this for our small checkup that we need to run for the cli to run
 cd /var/www/client
 bash arch.bash
+chmod +x ./MythicalDash
 ./MythicalDash -generate-config # Generate a custom config file
 ./MythicalDash -key-generate # Reset the encryption key
-./MythicalDash -config-setup # Start a custom setup for the dash
 ./MythicalDash -config-database # Setup the database connection
 ./MythicalDash -migrate-database-now # Migrate the database
+./MythicalDash -config-setup # Start a custom setup for the dash
 ```
 
 ## Crontab Configuration
