@@ -11,6 +11,7 @@ The first step in the update process is to download the new client files from Gi
 cd /var/www/client
 git fetch --all
 git reset --hard origin/develop
+sudo bash arch.bash
 ```
 ## Update Dependencies
 After you've downloaded all of the new files you will need to upgrade the core components of the dash. To do this, simply run the commands below and follow any prompts.
@@ -35,12 +36,6 @@ chown -R nginx:nginx /var/www/pterodactyl/*
 
 # If using Apache on CentOS
 chown -R apache:apache /var/www/pterodactyl/*
-```
-
-## Remove the FIRST_INSTALL file
-Now you have to remove the first_install file because this was an update.
-```bash
-rm /var/www/client/public/FIRST_INSTALL
 ```
 ## Done
 You are done, and now you should be running the latest version of MythicalDash.
