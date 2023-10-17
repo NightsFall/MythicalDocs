@@ -21,7 +21,7 @@ const config = {
   organizationName: 'MythicalLTD', // Usually your GitHub org/user name.
   projectName: 'MythicalDocs', // Usually your repo name.
 
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
 
   // Even if you don't use internalization, you can use this field to set useful
@@ -42,14 +42,14 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/mythicalltd/mythicaldocs/blob/main',
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/mythicalltd/mythicaldocs/blob/main',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -88,12 +88,7 @@ const config = {
             label: 'Discord',
             position: 'left',
           },
-          {
-            type: 'docsVersionDropdown',
-            position: 'right',
-          },
         ],
-        
       },
       footer: {
         style: 'dark',
@@ -104,14 +99,6 @@ const config = {
               {
                 label: 'MythicalDash',
                 to: '/docs/mythicaldash',
-              },
-              {
-                label: 'KosmaPanel',
-                to: '/docs/kosmapanel',
-              },
-              {
-                label: 'KosmaPanel Daemon',
-                to: '/docs/mythicaldash-daemon',
               },
             ],
           },
@@ -154,17 +141,5 @@ const config = {
       },
     }),
     
-};
-module.exports = {
-  plugins: ['@docusaurus/theme-live-codeblock'],
-  themeConfig: {
-    liveCodeBlock: {
-      /**
-       * The position of the live playground, above or under the editor
-       * Possible values: "top" | "bottom"
-       */
-      playgroundPosition: 'bottom',
-    },
-  },
 };
 module.exports = config;
