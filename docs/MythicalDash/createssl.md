@@ -1,7 +1,6 @@
 ---
 sidebar_position: 3
 ---
-
 # Creating SSL Certificates
 
 To begin, we will install certbot, a simple script that automatically renews our certificates and allows much easier creation of them. The command below is for Ubuntu distributions, but you can always check Certbot's [official site](https://certbot.eff.org/) for installation instructions. We have also included a command below to install certbot's Apache plugin so you won't have to stop your webserver.
@@ -9,7 +8,7 @@ To begin, we will install certbot, a simple script that automatically renews our
 
 ```bash
 sudo apt install -y certbot
-sudo apt install -y python3-certbot-apache
+sudo apt install -y python3-certbot-nginx
 ```
 
 ### Creating a Certificate
@@ -22,8 +21,8 @@ Then, in the command below, you should replace ``example.com`` with the domain y
 HTTP challenge requires you to expose port 80 for the challenge verification.
 
 ```bash
-# Apache
-certbot certonly --apache -d example.com
+# Nginx
+certbot certonly --nginx -d example.com
 # Standalone - Use this if neither works. Make sure to stop your webserver first when using this method.
 certbot certonly --standalone -d example.com
 ```
@@ -41,5 +40,5 @@ certbot -d example.com --manual --preferred-challenges dns certonly
 You'll also probably want to configure the automatic renewal of certificates to prevent unexpected certificate expirations. You can open crontab with ``sudo crontab -e`` and add the line from below to the bottom of it for attempting renewal every day at 23 (11 PM).
 
 ```bash
-0 23 * * * certbot renew --quiet --deploy-hook "systemctl restart apache2"
+0 23 * * * certbot renew --quiet --deploy-hook "systemctl restart nginx"
 ```

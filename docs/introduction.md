@@ -2,11 +2,12 @@
 sidebar_position: 1
 ---
 
-# Introduction
+# Welcome 
 
-Welcome to the MythicalSystems Documentation, this is where you will find documentation for all our projects. You can contribute to our documentation through the [Github repo](https://github.com/mythicalltd/mythicaldocs).
+Welcome to the enchanting realm where magic begins! Since our inception in 2021, we have garnered the trust of over 10,000 users and continue to captivate their imaginations this is where you will find documentation for all our projects. You can contribute to our documentation through the [GitHub Repo](https://github.com/MythicalLTD/MythicalDocs).
 
-# Current Projects
-1. [MythicalDash](MythicalDash/Introduction)
-2. [KosmaPanel](KosmaPanel/Introduction)
+## Getting Started
 
+Get started by selecting one of our **project**.
+
+[MythicalDash](/docs/mythicaldash/intro)
