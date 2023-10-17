@@ -12,6 +12,7 @@ cd /var/www/client
 git fetch --all
 git reset --hard origin/develop
 sudo bash arch.bash
+rm /var/www/client/public/FIRST_USER # Remove this
 ```
 ## Update Dependencies
 After you've downloaded all of the new files you will need to upgrade the core components of the dash. To do this, simply run the commands below and follow any prompts.
