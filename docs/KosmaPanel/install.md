@@ -15,7 +15,7 @@ Before starting the installation, make sure you have the following prerequisites
 ### Step 1: Install Dependencies
 Install the required dependencies by running the following commands:
 ```bash
-su root
+sudo root
 apt update
 apt upgrade -y
 apt install wget curl sudo -y
