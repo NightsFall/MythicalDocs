@@ -37,5 +37,10 @@ chown -R nginx:nginx /var/www/pterodactyl/*
 chown -R apache:apache /var/www/pterodactyl/*
 ```
 
+## Remove the FIRST_INSTALL file
+Now you have to remove the first_install file because this was an update.
+```bash
+rm /var/www/client/public/FIRST_INSTALL
+```
 ## Done
 You are done, and now you should be running the latest version of MythicalDash.
