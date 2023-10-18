@@ -16,7 +16,7 @@ cd /var/www/client
 git fetch --all
 git reset --hard origin/develop
 sudo bash arch.bash
-rm /var/www/client/public/FIRST_USER # Remove this
+rm /var/www/client/public/FIRST_INSTALL # Remove this
 ```
 ## Update Dependencies
 After you've downloaded all of the new files you will need to upgrade the core components of the dash. To do this, simply run the commands below and follow any prompts.
@@ -34,13 +34,13 @@ You'll also need to update your database schema for the newest version of Mythic
 The last step is to set the proper owner of the files to be the user that runs your webserver. In most cases this is www-data but can vary from system to system — sometimes being nginx, caddy, apache, or even nobody.
 ```bash
 # If using NGINX or Apache (not on CentOS):
-chown -R www-data:www-data /var/www/pterodactyl/*
+chown -R www-data:www-data /var/www/client/*
 
 # If using NGINX on CentOS:
-chown -R nginx:nginx /var/www/pterodactyl/*
+chown -R nginx:nginx /var/www/client/*
 
 # If using Apache on CentOS
-chown -R apache:apache /var/www/pterodactyl/*
+chown -R apache:apache /var/www/client/*
 ```
 ## Done
 You are done, and now you should be running the latest version of MythicalDash.
