@@ -9,7 +9,7 @@ This documentation covers the process for updating within the 1.x series of rele
 The first step in the update process is to download the new client files from GitHub. The command below will download the release archive for the most recent version of MythicalDash.
 ```bash
 cd /var/www/client
-mariadb-dump -p mythicaldash > mythicaldash_backup.sql
+mariadb-dump -p dash > mythicaldash_backup.sql
 cd /var/www
 zip -r clientbackup.zip client/
 cd /var/www/client
